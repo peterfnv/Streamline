@@ -74,6 +74,7 @@ const char *GFORMAT_STR[] = {
     "eFormatRG32UI",
     "eFormatD32S32",
     "eFormatD24S8",
+    "eFormatD32S32S8U", //peterf
 }; static_assert(countof(GFORMAT_STR) == sl::chi::eFormatCOUNT, "Not enough strings for eFormatCOUNT");
 
 #define SL_TEXT_BUFFER_SIZE 16384
@@ -889,6 +890,7 @@ ComputeStatus Generic::getBytesPerPixel(Format InFormat, size_t& size)
         8,                      // eFormatRG32UI,
         8,                      // eFormatD32S32,
         4,                      // eFormatD24S8,
+        8,                      // eFormatD32S32S8U //peterf
     }; static_assert(countof(BYTES_PER_PIXEL_TABLE) == eFormatCOUNT, "Not enough numbers for eFormatCOUNT");
 
     size = BYTES_PER_PIXEL_TABLE[InFormat];

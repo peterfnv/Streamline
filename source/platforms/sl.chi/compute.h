@@ -100,6 +100,7 @@ enum Format
     eFormatRG32UI,
     eFormatD32S32,
     eFormatD24S8,
+    eFormatD32S32S8U, //peterf
     eFormatCOUNT,
 };
 

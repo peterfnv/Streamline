@@ -3019,6 +3019,7 @@ ComputeStatus Vulkan::getNativeFormat(Format format, NativeFormat& native)
         case eFormatD24S8:      native = VK_FORMAT_D24_UNORM_S8_UINT; break;
         case eFormatD32S32:     native = VK_FORMAT_D32_SFLOAT; break;
         case eFormatR32F:       native = VK_FORMAT_R32_SFLOAT; break;
+        case eFormatD32S32S8U:  native = VK_FORMAT_D32_SFLOAT_S8_UINT; break;   //peterf
         case eFormatE5M3: assert(false);
     }
     
@@ -3053,6 +3054,7 @@ ComputeStatus Vulkan::getNativeFormat(Format format, NativeFormat& native)
         case VK_FORMAT_R32G32_SFLOAT:               format = eFormatRG32F; break;
         case VK_FORMAT_D24_UNORM_S8_UINT:           format = eFormatD24S8; break;
         case VK_FORMAT_D32_SFLOAT:                  format = eFormatD32S32; break;
+        case VK_FORMAT_D32_SFLOAT_S8_UINT:          format = eFormatD32S32S8U; break;    //peterf
         default:                                    format = eFormatINVALID;
     }
 
