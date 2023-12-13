@@ -1349,9 +1349,6 @@ PluginManager::PluginManager()
     FUNCTION_HOOK_ID_MAP_ENTRY(Vulkan_CreateWin32SurfaceKHR);
     FUNCTION_HOOK_ID_MAP_ENTRY(Vulkan_DestroySurfaceKHR);
 
-    FUNCTION_HOOK_ID_MAP_ENTRY(Vulkan_CmdBindPipeline);     //peterf
-    FUNCTION_HOOK_ID_MAP_ENTRY(Vulkan_CmdBindDescriptorSets);  //peterf
-    FUNCTION_HOOK_ID_MAP_ENTRY(Vulkan_BeginCommandBuffer);  //peterf
 
     assert((size_t)FunctionHookID::eMaxNum == m_functionHookIDMap.size());
 
